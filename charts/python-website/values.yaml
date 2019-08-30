@@ -15,7 +15,7 @@ knativeDeploy: false
 
 service:
   name: python-website
-  type: ClusterIP
+  type: NodePort
   externalPort: 80
   internalPort: 8080
   annotations:

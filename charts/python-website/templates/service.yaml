@@ -20,6 +20,7 @@ spec:
   - port: {{ .Values.service.externalPort }}
     targetPort: {{ .Values.service.internalPort }}
     protocol: TCP
+    nodePort: 33000
     name: http
   selector:
     app: {{ template "fullname" . }}
